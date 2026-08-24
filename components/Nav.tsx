@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Nav() {
   useEffect(() => {
@@ -15,16 +13,9 @@ export default function Nav() {
 
   return (
     <nav id="mainNav">
-      <Link className="nav-logo" href="#" aria-label="Genie Studio home">
-        <Image
-          src="/COLORD_HORIZENTAL.png"
-          alt="Genie Studio"
-          width={140}
-          height={25}
-          style={{ height: '25px', width: 'auto', objectFit: 'contain' }}
-          priority
-        />
-      </Link>
+      <a className="nav-logo" href="#">
+        <img src="/COLORD_HORIZENTAL.png" alt="Genie Studio" />
+      </a>
 
       <div className="nav-links">
         <a href="#services">Services</a>

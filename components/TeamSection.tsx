@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import type { TeamMember } from '@/types';
 
 interface Props {
@@ -24,14 +23,7 @@ export default function TeamSection({ team }: Props) {
             style={{ transitionDelay: `${(i * 0.12).toFixed(2)}s` }}
           >
             <div className="board-photo">
-              <Image
-                src={m.photo_url}
-                alt={m.name}
-                width={160}
-                height={160}
-                style={{ objectFit: 'cover', objectPosition: 'center' }}
-                loading="lazy"
-              />
+              <img src={m.photo_url} alt={m.name} loading="lazy" />
             </div>
             <div className="board-role">{m.role}</div>
             <div className="board-name">{m.name}</div>

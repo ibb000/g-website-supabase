@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -11,7 +10,6 @@ export default function Hero() {
     'EVENT PLANNING',
   ];
 
-  // Repeat 3 times for seamless marquee
   const repeated = [...sloganItems, ...sloganItems, ...sloganItems];
 
   return (
@@ -23,14 +21,7 @@ export default function Hero() {
 
       <div className="hero-inner">
         <div className="hero-icon">
-          <Image
-            src="/ICON_VERSION.png"
-            alt="Genie"
-            width={80}
-            height={80}
-            style={{ objectFit: 'contain' }}
-            priority
-          />
+          <img src="/ICON_VERSION.png" alt="Genie" />
         </div>
 
         <div className="hero-eyebrow">Cairo, Egypt · Est. 2022</div>
@@ -54,7 +45,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Slogan marquee strip */}
       <div className="slogan-strip">
         <div className="slogan-track">
           {repeated.map((item, i) => (

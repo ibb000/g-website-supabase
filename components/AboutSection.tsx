@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function AboutSection() {
   const tags = [
     'Brand Identity',
@@ -17,11 +15,11 @@ export default function AboutSection() {
       <div className="about-visual reveal">
         <div className="about-visual-inner">
           <div className="about-icon-lg">
-            <Image
+            <img
               src="/ICON_VERSION.png"
               alt="Genie"
-              width={140}
-              height={140}
+              width="140"
+              height="140"
               style={{ objectFit: 'contain' }}
             />
           </div>

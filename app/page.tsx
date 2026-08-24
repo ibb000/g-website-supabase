@@ -1,4 +1,5 @@
 import CustomCursor from '@/components/CustomCursor';
+import ScrollObserver from '@/components/ScrollObserver';
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import StatsBand from '@/components/StatsBand';
@@ -227,6 +228,7 @@ export default async function HomePage() {
   return (
     <main>
       <CustomCursor />
+      <ScrollObserver />
       <Nav />
       <Hero />
       <StatsBand stats={stats} />
